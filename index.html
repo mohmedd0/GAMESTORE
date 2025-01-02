@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝑮𝑨𝑴𝑬 𝑺𝑻𝑶𝑹𝑬</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            font-weight: bold;
+        }
+
+        header {
+            background: linear-gradient(135deg, #222, #444);
+            color: #ffcc00;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 3px solid #ffcc00;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        header p {
+            font-size: 1.3em;
+            margin-top: 10px;
+            color: #bbb;
+        }
+
+        nav {
+            background-color: #181818;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ffcc00;
+            color: #000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #ffcc00;
+        }
+
+        .prices {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .price-box {
+            background: #2a2a2a;
+            border: 2px solid #444;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+            transition: all 0.3s ease;
+        }
+        .price-box:hover {
+            border-color: #ffcc00;
+            transform: translateY(-5px);
+        }
+        .price-box h3 {
+            font-size: 1.8em;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+        .price-box p {
+            font-size: 1.4em;
+            color: #ccc;
+        }
+        .price-box input[type="number"] {
+            width: 50px;
+            padding: 5px;
+            margin-top: 15px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            text-align: center;
+            background: #1a1a1a;
+            color: #fff;
+        }
+        .price-box .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: #000;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .price-box .btn:hover {
+            background-color: #e6b800;
+        }
+
+        footer {
+            background-color: #222;
+            color: #999;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            border-top: 3px solid #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>𝑮𝑨𝑴𝑬 𝑺𝑻𝑶𝑹𝑬</h1>
+    <p>أفضل منصة شحن ألعاب</p>
+</header>
+
+<nav>
+    <a href="#pubg">شحن ببجي</a>
+    <a href="#freefire">شحن فري فاير</a>
+    <a href="#carparking">شحن كاربركنج</a>
+</nav>
+
+<div class="container">
+    <!-- قسم ببجي -->
+    <div id="pubg" class="section">
+        <h2>شحن ببجي</h2>
+        <div class="prices">
+            <div class="price-box">
+                <h3>60 UC</h3>
+                <p>55 EGP</p>
+                <input type="number" id="quantity-60" min="1" value="1">
+                <a href="https://wa.me/01097169122?text=أريد%20شراء%20%60%20UC%20×%20%60" class="btn">اطلب الآن 🛍</a>
+            </div>
+            <div class="price-box">
+                <h3>120 UC</h3>
+                <p>109 EGP</p>
+                <input type="number" id="quantity-120" min="1" value="1">
+                <a href="https://wa.me/01097169122?text=أريد%20شراء%20%60120%20UC%20×%20%60" class="btn">اطلب الآن 🛍</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم شحن فري فاير -->
+    <div id="freefire" class="section">
+        <h2>شحن فري فاير</h2>
+        <div class="prices">
+            <div class="price-box">
+                <h3>100 Diamonds</h3>
+                <p>65 EGP</p>
+                <input type="number" id="quantity-diamonds-100" min="1" value="1">
+                <a href="https://wa.me/01097169122?text=أريد%20شراء%20%60100%20Diamonds%20×%20%60" class="btn">اطلب الآن 🛍</a>
+            </div>
+            <div class="price-box">
+                <h3>210 Diamonds</h3>
+                <p>120 EGP</p>
+                <input type="number" id="quantity-diamonds-210" min="1" value="1">
+                <a href="https://wa.me/01097169122?text=أريد%20شراء%20%60210%20Diamonds%20×%20%60" class="btn">اطلب الآن 🛍</a>
+            </div>
+            <div class="price-box">
+                <h3>530 Diamonds</h3>
+                <p>295 EGP</p>
+                <input type="number" id="quantity-diamonds-530" min="1" value="1">
+                <a href="https://wa.me/01097169122?text=أريد%20شراء%20%60530%20Diamonds%20×%20%60" class="btn">اطلب الآن 🛍</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- قسم شحن كاربركنج -->
+    <div id="carparking" class="section">
+        <h2>شحن كاربركنج</h2>
+        <div class="prices">
+            <div class="price-box">
+                <h3>1000 CONE</h3>
+                <p>7 EGP</p>
+                <input type="number" id="quantity-carparking-1000" min="1" value="1">
+                <a href="https://wa.me/01097169122?text=أريد%20شراء%20%601000%20CONE%20×%20%60" class="btn">اطلب الآن 🛍</a>
+            </div>
+            <div class="price-box">
+                <h3>30,000 CONE</h3>
+                <p>35 EGP</p>
+                <input type="number" id="quantity-carparking-30000" min="1" value="1">
+                <a href="https://wa.me/01097169122?text=أريد%20شراء%20%6030,000%20CONE%20×%20%60" class="btn">اطلب الآن 🛍</a>
+            </div>
+            <div class="price-box">
+                <h3>500,000 CONE</h3>
+                <p>55 EGP</p>
+                <input type="number" id="quantity-carparking-500000" min="1" value="1">
+                <a href="https://wa.me/01097169122?text=أريد%20شراء%20%60500,000%20CONE%20×%20%60" class="btn">اطلب الآن 🛍</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Developed by: MOHMED OKSHA</p>
+</footer>
+
+</body>
+</html>
